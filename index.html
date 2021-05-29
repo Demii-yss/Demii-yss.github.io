@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background-color: #FFF2F2;">
+    <div id=RightList>
+        <div class="lable">
+            <p>牌堆總數:</p>
+        </div>
+        <div class="lable">
+            <p id="TotalCardNum">0</p>
+        </div>
+        <div class="lable">
+            <p>屬性傷害:</p>
+        </div>
+        <div class="lable">
+            <p id="TotalAttrAtk"></p>
+        </div>   
+    </div>
+    <h2>基本牌</h2>
+    <table class="OutterTable">
+        <colgroup>
+            <col style="width: 5%">
+            <col style="width: 5%">
+            <col style="width: 90%">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#NormalBlackAttack">1</td>
+                <td class="TableColor1">普殺</td>
+                <td class="TableColor1 boxOfCards" id="boxNormalBlackAttack">
+                </td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#NormalRedAttack">2</td>
+                <td class="TableColor1"><span class="RedCards">普殺</span></td>
+                <td class="TableColor1 boxOfCards" id="boxNormalRedAttack">22</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#ElectricAttack">3</td>
+                <td class="TableColor1">雷殺</td>
+                <td class="TableColor1 boxOfCards" id="boxElectricAttack">33</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#FireAttack">4</td>
+                <td class="TableColor1"><span class="RedCards">火殺</span></td>
+                <td class="TableColor1 boxOfCards" id="boxFireAttack">55</td>
+            </tr>
+            <tr>
+                <td class="TableColor2 box#Cards" id="#Missed">5</td>
+                <td class="TableColor2"><span class="RedCards">閃</span></td>
+                <td class="TableColor2 boxOfCards" id="boxMissed">qq</td>
+            </tr>
+            <tr>
+                <td class="TableColor2 box#Cards" id="#Wine">6</td>
+                <td class="TableColor2">酒</td>
+                <td class="TableColor2 boxOfCards" id="boxWine">ss</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#Peach">7</td>
+                <td class="TableColor1"><span class="RedCards">桃</span></td>
+                <td class="TableColor1 boxOfCards" id="boxPeach">cc</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>錦囊牌</h2>
+    <table class="OutterTable">
+        <colgroup>
+            <col style="width: 5%">
+            <col style="width: 5%">
+            <col style="width: 40%">
+            <col style="width: 5%">
+            <col style="width: 5%">
+            <col style="width: 40%">
+        </colgroup>
+        <tbody>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#Cancel">1</td>
+                <td class="TableColor1">無懈</td>
+                <td class="TableColor1 boxOfCards" id="boxCancel">123</td>
+                <td class="TableColor1 box#Cards" id="#Barbarians">1</td>
+                <td class="TableColor1">南蠻</td>
+                <td class="TableColor1 boxOfCards" id="boxBarbarians">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#SupplyOutage">1</td>
+                <td class="TableColor1">兵糧</td>
+                <td class="TableColor1 boxOfCards" id="boxSupplyOutage">123</td>
+                <td class="TableColor1 box#Cards" id="#ArrowRain">1</td>
+                <td class="TableColor1">萬箭</td>
+                <td class="TableColor1 boxOfCards" id="boxArrowRain">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#Arcadia">1</td>
+                <td class="TableColor1">樂</td>
+                <td class="TableColor1 boxOfCards" id="boxArcadia">123</td>
+                <td class="TableColor1 box#Cards" id="#Harvest">1</td>
+                <td class="TableColor1">五穀</td>
+                <td class="TableColor1 boxOfCards" id="boxHarvest">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#Lightning">1</td>
+                <td class="TableColor1">閃電</td>
+                <td class="TableColor1 boxOfCards" id="boxLightning">123</td>
+                <td class="TableColor1 box#Cards" id="#PeachGarden">1</td>
+                <td class="TableColor1">桃園</td>
+                <td class="TableColor1 boxOfCards" id="boxPeachGarden">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor2 box#Cards" id="#Destroy">1</td>
+                <td class="TableColor2">拆</td>
+                <td class="TableColor2 boxOfCards" id="boxDestroy">123</td>
+                <td class="TableColor2 box#Cards" id="#Duel">1</td>
+                <td class="TableColor2">決鬥</td>
+                <td class="TableColor2 boxOfCards" id="boxDuel">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor2 box#Cards" id="#Steal">1</td>
+                <td class="TableColor2">順手</td>
+                <td class="TableColor2 boxOfCards" id="boxSteal">123</td>
+                <td class="TableColor2 box#Cards" id="#Fire">1</td>
+                <td class="TableColor2">火攻</td>
+                <td class="TableColor2 boxOfCards" id="boxFire">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor2 box#Cards" id="#Creation">1</td>
+                <td class="TableColor2">無中</td>
+                <td class="TableColor2 boxOfCards" id="boxCreation">123</td>
+                <td class="TableColor2 box#Cards" id="#ChainUp">1</td>
+                <td class="TableColor2">鐵索</td>
+                <td class="TableColor2 boxOfCards" id="boxChainUp">123</td>
+            </tr>
+            <tr>
+                <td class="TableColor1 box#Cards" id="#BorrowedSword">1</td>
+                <td class="TableColor1">借刀</td>
+                <td class="TableColor1 boxOfCards" id="boxBorrowedSword">123</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>裝備牌</h2>
+    <table class="OutterTable">
+        <tr class="TableColor1">
+            <td class="boxOfCards" id="boxWeapon">
+                123
+            </td>
+        </tr>
+        <tr class="TableColor1">
+            <td class="boxOfCards" id="boxArmor">
+                123
+            </td>
+        </tr>
+        <tr class="TableColor1">
+            <td class="boxOfCards" id="boxHorse">
+                123
+            </td>
+        </tr>
+    </table>    
+    <script src="./main.js"></script>
+</body>
+</html>

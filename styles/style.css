@@ -1,0 +1,60 @@
+#TotalCardsNumDiv {
+  white-space: nowrap;
+}
+.lable {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.OutterTable {  
+  border: 1px solid black;
+  width: 70%;
+}
+.OutterTable td {
+  padding:10px 1px;
+}
+.OutterTable .TableColor1  {
+  background-color:#ffccc9;
+  text-align:left
+}
+.OutterTable .TableColor2  {
+  background-color:#ffce93;
+  text-align:left
+}
+
+.RedCards{
+  color:#ff6347;
+}
+
+.CardBtnTrue{
+  background-color:rgb(255, 255, 255);
+  text-align: center;
+  display:inline-block;
+  font-size: 20px;
+  border-radius: 8px; 
+  border-width: 3px;
+  border-style:inset ;
+  border-color: rgb(255, 172, 85); 
+}
+
+.CardBtnFalse{
+  background-color:rgb(141, 64, 109);
+  font-size: 20px;
+  text-align: center;
+  display:inline-block;
+  border-radius: 8px; 
+  border-width: 3px;
+  border-style:inset ;
+  border-color: rgb(255, 172, 85); 
+}
+
+#RightList {
+  position: fixed;
+  right: 5%;
+  top: 10%;
+  width: 15%;
+  border-radius: 8px; 
+  border-width: 3px;
+  border-style:inset ;
+  border-color: rgb(22, 92, 172); 
+}
